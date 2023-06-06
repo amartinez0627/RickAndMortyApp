@@ -3,8 +3,9 @@ package com.example.android.rickandmortyapp.repository
 import com.example.android.rickandmortyapp.model.ApiResponse
 import com.example.android.rickandmortyapp.model.CharacterModel
 import com.example.android.rickandmortyapp.util.Resource
+import javax.inject.Inject
 
-class CharacterRepository (
+class CharacterRepository @Inject constructor(
     private val apiService: RickAndMortyApiService
 ) {
 
